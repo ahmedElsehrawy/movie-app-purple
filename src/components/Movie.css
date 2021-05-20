@@ -1,0 +1,123 @@
+.card {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
+}
+
+.content {
+  font-size: 16px;
+  /*background-color: #4e57bf4d;*/
+  background-color: #5e215e;
+  margin: 0;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .title {
+  width: 140px;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .rating-green {
+  background-color: rgba(10, 66, 10, 0.486);
+  color: rgb(20, 240, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.card .rating-orange {
+  background-color: rgba(110, 61, 29, 0.432);
+  color: rgb(240, 126, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.card .rating-red {
+  background-color: rgba(77, 22, 22, 0.432);
+  color: rgb(240, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  font-size: 12px;
+}
+
+.description {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 170px;
+  max-height: 170px;
+  transform: translateY(100%);
+  background-color: rgb(255, 255, 255);
+  color: #420839;
+  font-size: 14px;
+  overflow: auto;
+  transition: all 0.5s ease;
+}
+h3 {
+  font-size: 18px;
+  color: #21b4b9;
+}
+
+.card:hover .description {
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 470px) {
+  .card {
+    overflow: hidden;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #63056b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.description::-webkit-scrollbar {
+  display: none;
+}
