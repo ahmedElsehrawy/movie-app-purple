@@ -28,6 +28,11 @@ a {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  margin-left: 10px;
+  width: 200px;
+  @media screen and (max-width: 500px) {
+    width: fit-content;
+  }
 }
 
 .previous-page {
@@ -40,11 +45,15 @@ a {
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  width: 200px;
+
+  @media screen and (max-width: 500px) {
+    width: fit-content;
+  }
 }
 
 .next-previous {
   display: flex;
-  width: 400px;
   margin: 50px 0;
   justify-content: space-around;
 }

@@ -1,9 +1,18 @@
 .navbar {
-  height: 65px;
-  background-color: #503f5c;
-  color: white;
+  height: 80px;
+  background: rgb(52, 44, 82);
+  background: linear-gradient(
+    91deg,
+    rgba(52, 44, 82, 1) 0%,
+    rgba(57, 18, 58, 1) 0%,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(28, 12, 21, 1) 49%,
+    rgba(0, 0, 0, 1) 84%,
+    rgba(52, 17, 21, 1) 100%,
+    rgba(23, 9, 23, 1) 100%
+  );
   display: flex;
-  padding: 0 50px;
+  padding: 0px 31px;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -19,7 +28,6 @@
 }
 
 .search {
-  background-color: #39123a;
   border-radius: 45px;
   display: flex;
   justify-content: center;
@@ -28,12 +36,12 @@
 }
 
 .search input {
+  background-color: white;
   border: none;
   outline: none;
   font-size: 15px;
-  max-width: 150px;
-  color: white;
   font-weight: bold;
+  padding: 7px 15px;
 }
 
 .search input::placeholder {
@@ -53,7 +61,6 @@
 }
 
 .search i {
-  color: #dedee7;
   cursor: pointer;
 }
 
